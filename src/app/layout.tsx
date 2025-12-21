@@ -38,6 +38,7 @@ export const metadata: Metadata = {
     description: "Stop overcomplicating your life and just fucking use Solana.",
     images: ["/og.svg"],
   },
+  metadataBase: new URL("https://justfuckingusesolana.com"),
 };
 
 export default function RootLayout({
