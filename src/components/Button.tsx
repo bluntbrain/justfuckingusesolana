@@ -15,8 +15,24 @@ export const Button = ({ href, children, variant = "primary", className = "" }: 
     secondary: "bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm",
   };
 
+  const isExternal = href.startsWith("http://") || href.startsWith("https://");
+  const combinedClassName = `${baseStyles} ${variants[variant]} ${className}`;
+
+  if (isExternal) {
+    return (
+      <a
+        href={href}
+        className={combinedClassName}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <Link href={href} className={`${baseStyles} ${variants[variant]} ${className}`}>
+    <Link href={href} className={combinedClassName}>
       {children}
     </Link>
   );

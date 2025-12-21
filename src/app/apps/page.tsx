@@ -170,9 +170,9 @@ export default function AppsPage() {
         <p className="text-sm">
           <Link href="/" className="hover:underline text-white/70">Home</Link>
           {" · "}
-          <a className="hover:underline text-white/70" href="https://solana.com/docs">Docs</a>
+          <a className="hover:underline text-white/70" href="https://solana.com/docs" target="_blank" rel="noopener noreferrer">Docs</a>
           {" · "}
-          <a className="hover:underline text-white/70" href="https://solana.com/developers">Developers</a>
+          <a className="hover:underline text-white/70" href="https://solana.com/developers" target="_blank" rel="noopener noreferrer">Developers</a>
         </p>
       </footer>
     </main>
