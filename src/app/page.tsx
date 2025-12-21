@@ -16,8 +16,8 @@ export default function Home() {
           <Button href="https://solana.com/docs/intro/quick-start" variant="primary">
             Start Building Now
           </Button>
-          <Button href="https://solana.com/developers" variant="secondary">
-            Developer Resources
+          <Button href="/apps" variant="secondary">
+            Explore Popular Apps
           </Button>
         </div>
         <p className="mt-8 text-sm text-gray-500 max-w-2xl">
@@ -78,18 +78,37 @@ export default function Home() {
       <Section id="faq" className="border-t border-white/5">
         <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">Common Excuses</h2>
         <div className="max-w-3xl mx-auto space-y-8">
-          <FAQItem 
+          <FAQItem
             question="But is it decentralized?"
-            answer="Yes. It’s a permissionless PoS network with a real validator set. If your bar is “perfect in theory”, you’ll never ship anything in practice."
+            answer="Yes. It's a permissionless PoS network with a real validator set. If your bar is 'perfect in theory', you'll never ship anything in practice."
           />
-          <FAQItem 
+          <FAQItem
             question="What about the outages?"
-            answer="Build like an adult: retries, good RPC, proper confirmation, and sane prioritization during spikes. Don’t blame the chain because you wrote “await sendTransaction” and prayed."
+            answer="Build like an adult: retries, good RPC, proper confirmation, and sane prioritization during spikes. Don't blame the chain because you wrote 'await sendTransaction' and prayed."
           />
-          <FAQItem 
+          <FAQItem
             question="Rust is too hard."
             answer="Use Anchor if you want sane ergonomics. Use programs only when you need programs. A lot of apps are just clients + accounts + tokens + a couple instructions. Calm down."
           />
+        </div>
+      </Section>
+
+      {/* Popular Apps Section */}
+      <Section id="apps" className="border-t border-white/5 bg-white/[0.02]">
+        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center">Apps People Actually Use</h2>
+        <p className="text-gray-400 text-center max-w-2xl mx-auto mb-12">
+          The ecosystem isn't theoretical. Millions of transactions per day across DeFi, NFTs, payments, and more.
+        </p>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <AppPreview name="Pump.fun" category="Token Launchpad" />
+          <AppPreview name="Jupiter" category="DEX Aggregator" />
+          <AppPreview name="Phantom" category="Wallet" />
+          <AppPreview name="Magic Eden" category="NFT Marketplace" />
+        </div>
+        <div className="text-center">
+          <Button href="/apps" variant="secondary">
+            View All Popular Apps →
+          </Button>
         </div>
       </Section>
 
@@ -100,6 +119,8 @@ export default function Home() {
         </p>
         <p className="mb-6">
           Links:{" "}
+          <a className="hover:underline text-white/70" href="/apps">Popular Apps</a>
+          {" · "}
           <a className="hover:underline text-white/70" href="https://solana.com/docs">Docs</a>
           {" · "}
           <a className="hover:underline text-white/70" href="https://solana.com/docs/tokens/extensions">Token Extensions</a>
@@ -140,6 +161,17 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
     <div className="p-8 rounded-2xl border border-white/5 bg-white/[0.01]">
       <h3 className="text-xl font-bold mb-3 text-solana-purple">{question}</h3>
       <p className="text-gray-400 text-lg">{answer}</p>
+    </div>
+  );
+}
+
+function AppPreview({ name, category }: { name: string; category: string }) {
+  return (
+    <div className="p-6 rounded-2xl bg-white/[0.03] border border-white/5 hover:border-white/10 transition-colors">
+      <span className="text-xs font-medium px-3 py-1 rounded-full bg-solana-purple/20 text-solana-purple">
+        {category}
+      </span>
+      <h3 className="text-xl font-bold mt-4 text-solana-green">{name}</h3>
     </div>
   );
 }
