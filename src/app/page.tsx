@@ -21,7 +21,7 @@ export default function Home() {
           </Button>
         </div>
         <p className="mt-8 text-sm text-gray-500 max-w-2xl">
-          Want to see where the network is actually heading? Go watch the <a className="hover:underline text-white/80" href="https://www.youtube.com/watch?v=y2JLwcM-prU&list=PLilwLeBwGuK5yeFH0YLgETacO-Gz4fjml&index=27">Breakpoint talks</a> and stop listening to mid-curvers.
+          Want to see where the network is actually heading? Go watch the <a className="hover:underline text-white/80" href="https://www.youtube.com/watch?v=y2JLwcM-prU&list=PLilwLeBwGuK5yeFH0YLgETacO-Gz4fjml&index=27" target="_blank" rel="noopener noreferrer">Breakpoint talks</a> and stop listening to mid-curvers.
         </p>
       </Section>
 
@@ -53,10 +53,10 @@ export default function Home() {
         <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">How to Fucking Start</h2>
         <div className="max-w-2xl mx-auto space-y-12">
           <Step number="1" title="Get a Wallet">
-            Install <a href="https://phantom.app" className="text-solana-purple hover:underline">Phantom</a> or <a href="https://backpack.app" className="text-solana-green hover:underline">Backpack</a>. It takes two minutes. Don't be lazy.
+            Install <a href="https://phantom.app" className="text-solana-purple hover:underline" target="_blank" rel="noopener noreferrer">Phantom</a> or <a href="https://backpack.app" className="text-solana-green hover:underline" target="_blank" rel="noopener noreferrer">Backpack</a>. It takes two minutes. Don't be lazy.
           </Step>
           <Step number="2" title="Set up your dev environment">
-            Follow <a href="https://solana.com/docs/intro/installation" className="text-solana-purple hover:underline">Solana’s installation</a> guide. Use devnet while you’re learning. Then run a local validator when you want fast tests and zero bullshit latency.
+            Follow <a href="https://solana.com/docs/intro/installation" className="text-solana-purple hover:underline" target="_blank" rel="noopener noreferrer">Solana's installation</a> guide. Use devnet while you're learning. Then run a local validator when you want fast tests and zero bullshit latency.
           </Step>
           <Step number="3" title="Pick a client SDK (and stop overthinking it)">
             <div className="bg-black/50 p-6 rounded-xl border border-white/10 mt-4">
@@ -68,7 +68,7 @@ export default function Home() {
           </Step>
           <Step number="4" title="Watch the Breakpoint Talks">
             <div className="text-gray-400 text-lg leading-relaxed">
-              If you want to know what the smartest people in the room are actually building, go through the <a href="https://www.youtube.com/watch?v=y2JLwcM-prU&list=PLilwLeBwGuK5yeFH0YLgETacO-Gz4fjml&index=27" className="text-solana-purple hover:underline">Breakpoint playlist</a>. Stop guessing and start knowing.
+              If you want to know what the smartest people in the room are actually building, go through the <a href="https://www.youtube.com/watch?v=y2JLwcM-prU&list=PLilwLeBwGuK5yeFH0YLgETacO-Gz4fjml&index=27" className="text-solana-purple hover:underline" target="_blank" rel="noopener noreferrer">Breakpoint playlist</a>. Stop guessing and start knowing.
             </div>
           </Step>
         </div>
@@ -121,11 +121,11 @@ export default function Home() {
           Links:{" "}
           <a className="hover:underline text-white/70" href="/apps">Popular Apps</a>
           {" · "}
-          <a className="hover:underline text-white/70" href="https://solana.com/docs">Docs</a>
+          <a className="hover:underline text-white/70" href="https://solana.com/docs" target="_blank" rel="noopener noreferrer">Docs</a>
           {" · "}
-          <a className="hover:underline text-white/70" href="https://solana.com/docs/tokens/extensions">Token Extensions</a>
+          <a className="hover:underline text-white/70" href="https://solana.com/docs/tokens/extensions" target="_blank" rel="noopener noreferrer">Token Extensions</a>
           {" · "}
-          <a className="hover:underline text-white/70" href="https://www.youtube.com/watch?v=y2JLwcM-prU&list=PLilwLeBwGuK5yeFH0YLgETacO-Gz4fjml&index=27">Breakpoint Talks</a>
+          <a className="hover:underline text-white/70" href="https://www.youtube.com/watch?v=y2JLwcM-prU&list=PLilwLeBwGuK5yeFH0YLgETacO-Gz4fjml&index=27" target="_blank" rel="noopener noreferrer">Breakpoint Talks</a>
         </p>
         <p className="text-sm italic">Built with Next.js, Tailwind, and a lot of caffeine.</p>
       </footer>
